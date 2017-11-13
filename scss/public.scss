@@ -154,11 +154,21 @@ $maxWidth: 1170px;
           height: 100%;
           line-height: 40px;
           font-size: 20px;
+          cursor: pointer;
+          @include transition(all .3s);
         }
+
+        &:hover, &:active {
+          &:before {
+            color: rgba(247, 70, 77, 1.00);
+          }            
+        }
+
         > * {
           float: left;
           display: inline-block;
         }
+
         > span {
           width: 60px;
           line-height: 42px;
@@ -294,6 +304,7 @@ $maxWidth: 1170px;
   background-color: white;
   border-top: 1px solid rgba(235, 235, 236, 1.00);
   border-bottom: 1px solid rgba(235, 235, 236, 1.00);
+  background-color: rgba(245, 246, 247, 1.00);
 
   .container {
     display: inline-block;
@@ -418,6 +429,12 @@ $maxWidth: 1170px;
         text-decoration: none;
         color: rgba(24, 25, 26, 1.00);
         font-weight: bold;
+        @include transition(color .3s);
+        cursor: pointer;
+
+        &:hover, &:active {
+          color: rgba(210, 16, 18, 1.00);
+        }
       }
       &:before {
         color: rgba(250, 83, 87, 1.00);
@@ -460,6 +477,10 @@ $maxWidth: 1170px;
       text-decoration: none;
       margin-left: 4px;
       cursor: pointer;
+
+      &:hover, &:active {
+        color: rgba(247, 70, 77, 1.00);
+      }
     }
   }
 }
@@ -1907,7 +1928,7 @@ $maxWidth: 1170px;
   width: 60px;
   z-index: 10;
   height: 46px * 3;
-  border: 1px solid rgba(45, 46, 47, 1.00);
+  border: 1px solid rgba(220, 221, 222, 1.00);
   background-color: rgba(248, 249, 250, 1.00);
 
   > * {
@@ -1915,13 +1936,17 @@ $maxWidth: 1170px;
     width: 100%;
     height: 46px;
     line-height: 46px;
-    border-bottom: 1px solid rgba(45, 46, 47, 1.00);
+    border-bottom: 1px solid rgba(220, 221, 222, 1.00);
     color: rgba(45, 46, 47, 1.00);
     text-transform: uppercase;
     cursor: pointer;
 
     &:not(:first-child) {
       @include opacity(.4);
+    }
+
+    &:hover, &:active {
+      color: rgba(247, 70, 77, 1.00);
     }
   }
 }
@@ -2390,7 +2415,7 @@ $maxWidth: 1170px;
     .c {
       display: inline-block;
       width: 100%;
-      margin-top: 80px;
+      margin: 80px 0;
       .tab {
         display: inline-block;
         width: 100%;

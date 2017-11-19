@@ -9,6 +9,7 @@
 
     <link href="css/icon.css" rel="stylesheet" type="text/css" />
     <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <link href="css/car.css" rel="stylesheet" type="text/css" />
 
     <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
     <script src="js/public.js" language="javascript" type="text/javascript" ></script>
@@ -84,13 +85,9 @@
       <div class='container icon-home'>
         <a href=''>首頁</a>
         <span class='icon-chevron-right'></span>
-        <a href=''>買禮卷</a>
-        <span class='icon-chevron-right'></span>
-        <a href=''>紙本禮卷</a>
+        <a href=''>購物車</a>
       </div>
     </div>
-
-
 
     <div id='mobile_top'>
       <input type='checkbox' id='mobile_top_ckb' class='hckb' />
@@ -132,121 +129,110 @@
       </div>
     </div>
 
-    <div id='tags' class='n6'>
+    <div id='car-content' class='car03'>
       <div class='container'>
-        <a href="">顯示全部1</a>
-        <a href="" class='a'>顯示全部2</a>
-        <a href="">顯示全部3</a>
-        <a href="">顯示全部4</a>
-        <a href="">顯示全部5</a>
-        <a href="">顯示全部6</a>
-      </div>
-    </div>
+        <div class='tabs'>
+          <a href="" class='a'>我的商品訂單(<i>4</i>)</a>
+          <a href="">我的旅遊訂單(<i>2</i>)</a>
+        </div>
+        
+        <div class='tip'><i class='icon-order'></i> 商品訂購完成</div>        
 
-    <div id='products'>
-      <div class='container'>
-        <div class='product'>
-          <div class='img _ic'>
-            <img src="img/d.png">
-            <span class='tag n1'>品味風格</span>
-            <span class='icon-love'></span>
-          </div>
-          <b>台北台北台北台北台北台北台北台北台北</b>
-          <span>台北台北台北台北台北台北台北台北台北台北</span>
-          <div class='bottom'>
-            <div>
-              <b>$1,234</b><i>/</i><span>原價$2,345</span>
-            </div>
-            <a>加入購物車</a>
+        <div class='tip2'>
+          <b title='您的訂單編號：'>23466732</b>
+          <div class='l'><span>提醒您</span></div>
+          <div class='r'>
+            <span>此訂單尚未完成付款，請依照下方提供之 ATM 帳戶資訊，完成轉帳手續。</span>
+            <span>付款完成後，請至 <i>我的帳戶 > 訂單明細</i> 中登入轉帳帳戶後五碼，確認付款後，我們將儘速為您出貨。</span>
+            <span>您可以在 <i>訂單明細</i> 中查詢訂單進度，或是至訂單列表查詢您的歷史訂單紀錄。</span>
           </div>
         </div>
 
-        <div class='product'>
-          <div class='img _ic'>
-            <img src="img/d.png">
-            <span class='tag n2'>品味風格</span>
-            <span class='icon-love a'></span>
-          </div>
-          <b>台北台北台北台北台北台北台北台北台北</b>
-          <span>台北台北台北台北台北台北台北台北台北台北</span>
-          <div class='bottom'>
-            <div>
-              <b>$1,234</b><i>/</i><span>原價$2,345</span>
+        <div class='content'>
+          <div class='l'>
+            <h3>訂單資訊及寄送資料</h3>
+            <div class='n3'>
+              <span>訂單編號：098765</span>
+              <span>訂單日期：2017-01-01 12:12</span>
+              <span>訂單狀態：已成立訂單</span>
             </div>
-            <a>加入購物車</a>
+            <div class='n3'>
+              <span>配送方式：宅配 / 郵遞</span>
+              <span>運送狀態：尚未出貨</span>
+              <span>運送日期：-</span>
+            </div>
+
+            <h3>ATM 付款資訊</h3>
+            <div class='n3'>
+              <span>銀行代碼：822</span>
+              <span>轉帳銀行：中國信託</span>
+              <span>轉帳帳號：1234-1234-1234</span>
+            </div>
+
+            <h3>訂購人資訊</h3>
+            <div class='n3'>
+              <span>訂購人：822</span>
+              <span>訂購者身份：中國信託</span>
+              <span>付款狀態：<i>尚未付款</i></span>
+            </div>
+            <div class='n3'>
+              <span>訂購金額：NT 9,000</span>
+              <span>實付金額：NT 8,000</span>
+              <span></span>
+            </div>
+            <div class='n3 s'>
+              <span>福利金：8,000</span>
+              <span>旅遊金：8,000</span>
+              <span>回饋金：8,000</span>
+            </div>
+            <div class='n1' title='訂購備註：'>
+              您訂購的禮盒，將在完成付款後 2至4個工作天送達您訂購的禮盒，將在完成付款後 2至4個工作天送達您訂購的禮盒，將在完成付款後 2至4個工作天送達您訂購的禮盒，將在完成付款後 2至4個工作天送達您訂購的禮盒，將在完成付款後 2至4個工作天送達
+            </div>
+
+
+            <h3>收件人資訊</h3>
+            <div class='n3'>
+              <span>收件人：王小明</span>
+              <span>行動電話：0987-098-098</span>
+              <span>電話：-</span>
+            </div>
+            <div class='n1' title='收件地址：'>新北市板橋區123號12樓</div>
+
+            <h3>發票資訊</h3>
+            <div class='n3'>
+              <span>收件人：王小明</span>
+              <span>行動電話：0987-098-098</span>
+              <span>電話：-</span>
+            </div>
+            <div class='n1' title='收件地址：'>新北市板橋區123號12樓</div>
+
+          </div>
+          <div class='r'>
+            <div class='box02'>
+              <b>購物車明細</b>
+              <div>
+                <span>台北君品酒店。6F 茶苑君品酒店君品酒</span>
+                <span><b>金額：</b>NT 3,000</span>
+              </div>
+              
+              <div>
+                <span>台北君品酒店。6F 茶苑君品酒店君品酒</span>
+                <span><b>金額：</b>NT 3,000</span>
+              </div>
+              
+              <div>
+                <span>台北君品酒店。6F 茶苑君品酒店君品酒</span>
+                <span><b>金額：</b>NT 3,000</span>
+              </div>
+              
+              <span title='小記'>NT 90,000</span>
+              <span title='運費'>NT 70</span>
+              <b><span>消費金額總計</span><span>NT 3,092</span></b>
+            </div>
+
+            <a href="">繼續購物</a>
           </div>
         </div>
-
-        <div class='product'>
-          <div class='img _ic'>
-            <img src="img/d.png">
-            <span class='tag n3'>品味風格</span>
-          </div>
-          <b>台北台北台北台北台北台北台北台北台北</b>
-          <span>台北台北台北台北台北台北台北台北台北台北</span>
-          <div class='bottom'>
-            <div>
-              <b>$1,234</b><i>/</i><span>原價$2,345</span>
-            </div>
-            <a>加入購物車</a>
-          </div>
-        </div>
-
-        <div class='product'>
-          <div class='img _ic'>
-            <img src="img/d.png">
-            <span class='tag n4'>品味風格</span>
-          </div>
-          <b>台北台北台北台北台北台北台北台北台北</b>
-          <span>台北台北台北台北台北台北台北台北台北台北</span>
-          <div class='bottom'>
-            <div>
-              <b>$1,234</b><i>/</i><span>原價$2,345</span>
-            </div>
-            <a>加入購物車</a>
-          </div>
-        </div>
-
-        <div class='product'>
-          <div class='img _ic'>
-            <img src="img/d.png">
-            <span class='tag n5'>品味風格</span>
-          </div>
-          <b>台北台北台北台北台北台北台北台北台北</b>
-          <span>台北台北台北台北台北台北台北台北台北台北</span>
-          <div class='bottom'>
-            <div>
-              <b>$1,234</b><i>/</i><span>原價$2,345</span>
-            </div>
-            <a>加入購物車</a>
-          </div>
-        </div>
-
-        <div class='product'>
-          <div class='img _ic'>
-            <img src="img/d.png">
-            <span class='tag n1'>品味風格</span>
-            <span class='icon-love'></span>
-          </div>
-          <b>台北台北台北台北台北台北台北台北台北</b>
-          <span>台北台北台北台北台北台北台北台北台北台北</span>
-          <div class='bottom'>
-            <div>
-              <b>$1,234</b><i>/</i><span>原價$2,345</span>
-            </div>
-            <a>加入購物車</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class='pgn'>
-      <div class='container'>
-        <a href="">上一頁</a>
-        <a href="">1</a>
-        <a href="" class='a'>2</a>
-        <a href="">3</a>
-        <a href="">下一頁</a>
       </div>
     </div>
 

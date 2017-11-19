@@ -6,14 +6,20 @@
   @include font-smoothing(antialiased);
 }
 
-.icon-google-plus:before {
-  content: "\ea8b";
+.icon-edit:before {
+  content: "\e911";
 }
-.icon-facebook:before {
-  content: "\ea90";
+.icon-key:before {
+  content: "\e912";
 }
-.icon-twitter:before {
-  content: "\ea96";
+.icon-im:before {
+  content: "\e913";
+}
+.icon-king:before {
+  content: "\e914";
+}
+.icon-order:before {
+  content: "\e915";
 }
 .icon-car:before {
   content: "\e904";
@@ -32,6 +38,15 @@
 }
 .icon-user:before {
   content: "\e909";
+}
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
 }
 .icon-arrow_drop_down:before {
   content: "\e903";

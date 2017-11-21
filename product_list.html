@@ -9,7 +9,6 @@
 
     <link href="css/icon.css" rel="stylesheet" type="text/css" />
     <link href="css/public.css" rel="stylesheet" type="text/css" />
-    <link href="css/car.css" rel="stylesheet" type="text/css" />
 
     <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
     <script src="js/public.js" language="javascript" type="text/javascript" ></script>
@@ -19,7 +18,7 @@
     <div id='top'>
       <div class='container'>
         <a href='' class='icon-phone'>02-2657-7000</a>
-        <a href='' class='icon-mail'>service@if.club.tw</a>
+        <a href='mailto:service@if.club.tw' class='icon-mail'>service@if.club.tw</a>
 
         <a href=''>
           <img src='img/line.png' />
@@ -61,12 +60,25 @@
       <div class='container'>
         <div class='menu'>
           <a href=''>首頁</a>
+          <div>買商品
+            <div>
+              <a href="product_list.html">女裝精品</a>
+              <a href="product_list.html">內衣/男裝</a>
+              <a href="product_list.html">鞋品/箱包</a>
+              <a href="product_list.html">飾品/配件</a>
+              <a href="product_list.html">運動/戶外</a>
+              <a href="product_list.html">傢俱/家電</a>
+              <a href="product_list.html">智能/數碼</a>
+              <a href="product_list.html">影音/小家电</a>
+              <a href="product_list.html">母婴/玩具</a>
+              <a href="product_list.html">汽車/娱樂</a>
+              <a href="product_list.html">美妝/個護</a>
+            </div>
+          </div>
           <div>買禮卷
             <div>
-              <a href="">紙本禮卷</a>
-              <a href="">電子禮卷</a>
-              <a href="">電子禮卷</a>
-              <a href="">電子禮卷</a>
+              <a href="product_list.html">紙本禮卷</a>
+              <a href="product_list.html">電子禮卷</a>
             </div>
           </div>
           <a href=''>晚鳥俱樂部</a>
@@ -76,7 +88,7 @@
           <a href=''>特店卷與旅遊卷</a>
         </div>
         <div class='icon-user status'>
-          <a href="">註冊</a> / <a href="">登入</a>
+          <a href="sing.html">註冊</a> / <a href="login.html">登入</a>
         </div>
       </div>
     </div>
@@ -85,34 +97,51 @@
       <div class='container icon-home'>
         <a href=''>首頁</a>
         <span class='icon-chevron-right'></span>
-        <a href=''>購物車</a>
+        <a href=''>買禮卷</a>
+        <span class='icon-chevron-right'></span>
+        <a href=''>紙本禮卷</a>
       </div>
     </div>
+
+
 
     <div id='mobile_top'>
       <input type='checkbox' id='mobile_top_ckb' class='hckb' />
       <div class='top'>
         <div><label for='mobile_top_ckb' class='icon-menu'></label></div>
         <div>
-          <i class='icon-user'></i><a href="">註冊</a><span>/</span><a href="">登入</a>
+          <i class='icon-user'></i><a href="sing.html">註冊</a><span>/</span><a href="login.html">登入</a>
         </div>
       </div>
       <div class='header'>
         <div class='img'><img src='img/top_logo.png'></div>
         <div>
-          <a>前往結帳</a>
+          <a href='car_step01.html'>前往結帳</a>
           <i class='icon-arrow_drop_down'></i>
           <i class='icon-car' data-cnt='10'></i>
         </div>
       </div>
       <div class='menu'>
         <a href=''>首頁</a>
-        <div class='a'><span>買禮卷</span>
+        <div class='a'><span>買商品</span>
           <div>
-            <a href="" class='a'>紙本禮卷</a>
-            <a href="">電子禮卷</a>
-            <a href="">電子禮卷</a>
-            <a href="">電子禮卷</a>
+            <a href="product_list.html"  class='a'>女裝精品</a>
+            <a href="product_list.html">內衣/男裝</a>
+            <a href="product_list.html">鞋品/箱包</a>
+            <a href="product_list.html">飾品/配件</a>
+            <a href="product_list.html">運動/戶外</a>
+            <a href="product_list.html">傢俱/家電</a>
+            <a href="product_list.html">智能/數碼</a>
+            <a href="product_list.html">影音/小家电</a>
+            <a href="product_list.html">母婴/玩具</a>
+            <a href="product_list.html">汽車/娱樂</a>
+            <a href="product_list.html">美妝/個護</a>
+          </div>
+        </div>
+        <div><span>買禮卷</span>
+          <div>
+            <a href="product_list.html" class='a'>紙本禮卷</a>
+            <a href="product_list.html">電子禮卷</a>
           </div>
         </div>
         <a href=''>晚鳥俱樂部</a>
@@ -129,109 +158,121 @@
       </div>
     </div>
 
-    <div id='car-content' class='car01'>
+    <div id='tags' class='n6'>
       <div class='container'>
-        <div class='tabs'>
-          <a href="" class='a'>我的商品訂單(<i>4</i>)</a>
-          <a href="">我的旅遊訂單(<i>2</i>)</a>
-        </div>
-        
-        <div class='tip'><i class='icon-king'></i> 親愛的 <i>王小明</i> 會員您好，以下是您的購物清單，總共有 <i>4</i> 件商品：</div>        
+        <a href="">顯示全部</a>
+        <a href="" class='a'>現金卷</a>
+        <a href="">食尚美食</a>
+        <a href="">品味生活</a>
+        <a href="">度假旅遊</a>
+        <a href="">其他商品</a>
+      </div>
+    </div>
 
-        <div class='content'>
-          <div class='l'>
-            <div class='t'>
-              <span>商品名稱</span>
-              <span>價格</span>
-              <span>數量</span>
-              <span>小計</span>
-              <span></span>
-            </div>
-
-            <div class='i'>
-              <div>
-                <div class='img _ic'><img src='img/d.png'/></div>
-                <div>
-                  <b>台北台北台北台北台北台北台北台北</b>
-                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
-                </div>
-              </div>
-              <div>$90,000</div>
-              <div>
-                <select><option>1</option></select>
-              </div>
-              <div>$90,000</div>
-              <div><a href="" class='icon-x'></a></div>
-            </div>
-
-            <div class='i'>
-              <div>
-                <div class='img _ic'><img src='img/d.png'/></div>
-                <div>
-                  <b>台北台北台北台北台北台北台北台北</b>
-                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
-                </div>
-              </div>
-              <div>$90,000</div>
-              <div>
-                <select><option>1</option></select>
-              </div>
-              <div>$90,000</div>
-              <div><a href="" class='icon-x'></a></div>
-            </div>
-
-            <div class='i'>
-              <div>
-                <div class='img _ic'><img src='img/d.png'/></div>
-                <div>
-                  <b>台北台北台北台北台北台北台北台北</b>
-                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
-                </div>
-              </div>
-              <div>$90,000</div>
-              <div>
-                <select><option>1</option></select>
-              </div>
-              <div>$90,000</div>
-              <div><a href="" class='icon-x'></a></div>
-            </div>
-
-            <div class='c'>
-              <b class='icon-im'>重要提醒</b>
-              <div>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-              </div>
-              <div>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-              </div>
-            </div>
+    <div id='products'>
+      <div class='container'>
+        <div class='product'>
+          <div class='img _ic'>
+            <img src="img/d.png">
+            <span class='tag n1'>品味風格</span>
+            <span class='icon-love'></span>
           </div>
-          <div class='r'>
-            <div class='box01'>
-              <b>購物車明細</b>
-              <div>
-                <span>商品件數</span>
-                <span>4件</span>
-              </div>
-              <div>
-                <span>商品件數</span>
-                <span>4件</span>
-              </div>
-              <div>
-                <span>商品件數</span>
-                <span>4件</span>
-              </div>
-              <span>購買金額達 NT500免運</span>
-              <b><span>消費金額總計</span><span>NT 3,070</span></b>
+          <a href='product_detial.html'>台北台北台北台北台北台北台北台北台北</a>
+          <span>台北台北台北台北台北台北台北台北台北台北</span>
+          <div class='bottom'>
+            <div>
+              <b>$1,234</b><i>/</i><span>原價$2,345</span>
             </div>
-
-            <a href="">結 帳</a>
-            <a href="">繼續購物</a>
+            <button>加入購物車</button>
           </div>
         </div>
+
+        <div class='product'>
+          <div class='img _ic'>
+            <img src="img/d.png">
+            <span class='tag n2'>品味風格</span>
+            <span class='icon-love a'></span>
+          </div>
+          <a href='product_detial.html'>台北台北台北台北台北台北台北台北台北</a>
+          <span>台北台北台北台北台北台北台北台北台北台北</span>
+          <div class='bottom'>
+            <div>
+              <b>$1,234</b><i>/</i><span>原價$2,345</span>
+            </div>
+            <button>加入購物車</button>
+          </div>
+        </div>
+
+        <div class='product'>
+          <div class='img _ic'>
+            <img src="img/d.png">
+            <span class='tag n3'>品味風格</span>
+          </div>
+          <a href='product_detial.html'>台北台北台北台北台北台北台北台北台北</a>
+          <span>台北台北台北台北台北台北台北台北台北台北</span>
+          <div class='bottom'>
+            <div>
+              <b>$1,234</b><i>/</i><span>原價$2,345</span>
+            </div>
+            <button>加入購物車</button>
+          </div>
+        </div>
+
+        <div class='product'>
+          <div class='img _ic'>
+            <img src="img/d.png">
+            <span class='tag n4'>品味風格</span>
+          </div>
+          <a href='product_detial.html'>台北台北台北台北台北台北台北台北台北</a>
+          <span>台北台北台北台北台北台北台北台北台北台北</span>
+          <div class='bottom'>
+            <div>
+              <b>$1,234</b><i>/</i><span>原價$2,345</span>
+            </div>
+            <button>加入購物車</button>
+          </div>
+        </div>
+
+        <div class='product'>
+          <div class='img _ic'>
+            <img src="img/d.png">
+            <span class='tag n5'>品味風格</span>
+          </div>
+          <a href='product_detial.html'>台北台北台北台北台北台北台北台北台北</a>
+          <span>台北台北台北台北台北台北台北台北台北台北</span>
+          <div class='bottom'>
+            <div>
+              <b>$1,234</b><i>/</i><span>原價$2,345</span>
+            </div>
+            <button>加入購物車</button>
+          </div>
+        </div>
+
+        <div class='product'>
+          <div class='img _ic'>
+            <img src="img/d.png">
+            <span class='tag n1'>品味風格</span>
+            <span class='icon-love'></span>
+          </div>
+          <a href='product_detial.html'>台北台北台北台北台北台北台北台北台北</a>
+          <span>台北台北台北台北台北台北台北台北台北台北</span>
+          <div class='bottom'>
+            <div>
+              <b>$1,234</b><i>/</i><span>原價$2,345</span>
+            </div>
+            <button>加入購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='pgn'>
+      <div class='container'>
+        <a href="">上一頁</a>
+        <a href="">1</a>
+        <a href="" class='a'>2</a>
+        <a href="">3</a>
+        <a href="">下一頁</a>
       </div>
     </div>
 
@@ -250,13 +291,13 @@
                 <span class='tag n1'>品味風格</span>
                 <span class='icon-love'></span>
               </div>
-              <b>1台北台北台北台北台北台北台北台北台北</b>
+              <a href='product_detial.html'>1台北台北台北台北台北台北台北台北台北</a>
               <span>台北台北台北台北台北台北台北台北台北台北</span>
               <div class='bottom'>
                 <div>
                   <b>$1,234</b><i>/</i><span>原價$2,345</span>
                 </div>
-                <a>加入購物車</a>
+                <button>加入購物車</button>
               </div>
             </div>
             <div class='product'>
@@ -265,13 +306,13 @@
                 <span class='tag n1'>品味風格</span>
                 <span class='icon-love'></span>
               </div>
-              <b>2台北台北台北台北台北台北台北台北台北</b>
+              <a href='product_detial.html'>2台北台北台北台北台北台北台北台北台北</a>
               <span>台北台北台北台北台北台北台北台北台北台北</span>
               <div class='bottom'>
                 <div>
                   <b>$1,234</b><i>/</i><span>原價$2,345</span>
                 </div>
-                <a>加入購物車</a>
+                <button>加入購物車</button>
               </div>
             </div>
             <div class='product'>
@@ -280,13 +321,13 @@
                 <span class='tag n1'>品味風格</span>
                 <span class='icon-love'></span>
               </div>
-              <b>3台北台北台北台北台北台北台北台北台北</b>
+              <a href='product_detial.html'>3台北台北台北台北台北台北台北台北台北</a>
               <span>台北台北台北台北台北台北台北台北台北台北</span>
               <div class='bottom'>
                 <div>
                   <b>$1,234</b><i>/</i><span>原價$2,345</span>
                 </div>
-                <a>加入購物車</a>
+                <button>加入購物車</button>
               </div>
             </div>
             <div class='product'>
@@ -295,13 +336,13 @@
                 <span class='tag n1'>品味風格</span>
                 <span class='icon-love'></span>
               </div>
-              <b>4台北台北台北台北台北台北台北台北台北</b>
+              <a href='product_detial.html'>4台北台北台北台北台北台北台北台北台北</a>
               <span>台北台北台北台北台北台北台北台北台北台北</span>
               <div class='bottom'>
                 <div>
                   <b>$1,234</b><i>/</i><span>原價$2,345</span>
                 </div>
-                <a>加入購物車</a>
+                <button>加入購物車</button>
               </div>
             </div>
 
@@ -320,7 +361,7 @@
     
     <div id='contact'>
       <b>contact us</b>
-      <span>識校共於個自書上從於發市認太其亞現喜到愛紅民出電；色經車性行還、國通不於感可球古如我錯！獎好母談布怎灣是爾而呢去舞亞數超易哥。</span>
+      <span>您是公司的福委成員嗎？想得到我們的幫助與專屬的規劃嗎？別害羞，您可以輸入您的e-mail，我們將儘速與您聯絡，解決您的煩惱。</span>
       <div>
         <input placeholder='輸入你的郵件'>
         <button>send me</button>
@@ -387,7 +428,7 @@
       </div>
       <div class='ctrl'>
         <label for='cartmp_detail_ckb'>繼續購物</label>
-        <a href="">結帳</a>
+        <a href="car_step01.html">結帳</a>
       </div>
     </div>
 
@@ -430,7 +471,7 @@
       </div>
       <div class='heart'>
         <div class='title'>
-          <b>購物商品</b>
+          <b>喜愛商品</b>
           <div>
             <a class='icon-chevron-left'></a>
             <a class='icon-chevron-right'></a>
@@ -459,7 +500,7 @@
           </span>
         </div>
 
-        <a>前往結帳</a>
+        <a>喜愛清單</a>
       </div>
     </div>
 

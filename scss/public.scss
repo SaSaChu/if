@@ -304,7 +304,7 @@ $maxWidth: 1170px;
   background-color: white;
   border-top: 1px solid rgba(235, 235, 236, 1.00);
   border-bottom: 1px solid rgba(235, 235, 236, 1.00);
-  background-color: rgba(245, 246, 247, 1.00);
+  // background-color: rgba(245, 246, 247, 1.00);
 
   .container {
     display: inline-block;
@@ -312,7 +312,7 @@ $maxWidth: 1170px;
     height: 100%;
     max-width: $maxWidth;
     margin: 0 auto;
-    background-color: rgba(245, 246, 247, 1.00);
+    // background-color: rgba(245, 246, 247, 1.00);
     @include clearfix();
     @include range-width(0, 1200px) {
       padding: 0 8px;
@@ -346,7 +346,7 @@ $maxWidth: 1170px;
         > i {
           position: absolute;
           top: -18px;
-          left: 4px;
+          left: 26px;
           display: inline-block;
           // width: calc(100% - 4px * 2);
           height: 28px;
@@ -448,8 +448,8 @@ $maxWidth: 1170px;
 #nav {
   display: inline-block;
   width: 100%;
-  height: 110px;
-  line-height: 110px - 5px;
+  height: 90px;
+  line-height: 90px - 5px;
   background-color: white;
   border-bottom: 5px solid rgba(213, 42, 47, 1.00);
 
@@ -574,6 +574,13 @@ $maxWidth: 1170px;
           cursor: pointer;
           text-decoration: none;
           font-size: 15px;
+          color: rgba(97, 97, 98, 1.00);
+          @include transition(all .3s);
+          
+          &:hover, &:active {
+            color: rgba(249, 73, 77, 1.00);
+          }
+
           + i {
             // &:before {
               // display: inline-block;
@@ -609,6 +616,7 @@ $maxWidth: 1170px;
     display: none;
     width: 100%;
     background-color: white;
+
     > * {
       display: inline-block;
       width: 100%;
@@ -622,6 +630,7 @@ $maxWidth: 1170px;
       border-bottom: 1px solid rgba(232, 233, 234, 1.00);
       color: rgba(13, 13, 14, 1.00);
     }
+
     > div {
       position: relative;
 
@@ -843,6 +852,7 @@ $maxWidth: 1170px;
           display: inline-block;
           width: 100%;
         }
+
         > b {
           height: 18px * 2;
           line-height: 18px;
@@ -1185,18 +1195,27 @@ $maxWidth: 1170px;
           }
         }
       }
-      > b {
+      > a {
         height: 44px;
         line-height: 44px;
         display: inline-block;
         width: 100%;
+        cursor: pointer;
+        text-decoration: none;
         @include overflow-docx3();
         text-align: left;
         font-size: 20px;
         padding: 0 16px;
         margin-top: 10px;
+        font-weight: 600;
         @include range-width(0, 600px) {
           padding: 0;
+        }
+        @include transition(all .3s);
+        color: rgba(91, 91, 91, 1.00);
+        
+        &:hover, &:active {
+          color: rgba(249, 73, 77, 1.00);
         }
       }
       > span {
@@ -1252,17 +1271,27 @@ $maxWidth: 1170px;
             margin-top: 8px;
           }
         }        
-        > a {
+        > button {
+          display: inline-block;
+          font-size: 15px;
           width: 100px;
           height: 36px;
-          line-height: 36px;
+          line-height: 30px;
           text-align: center;
+          outline: 0;
           color: rgba(98, 99, 100, 1.00);
           border: 1px solid rgba(98, 99, 100, 1.00);
           @include border-radius(3px);
           background-color: white;
           margin-top: 15px;
           cursor: pointer;
+          @include transition(all .3s);
+
+          &:hover, &:active {
+            background-color: rgba(249, 73, 77, 1.00);
+            color: white;
+            border: 0;
+          }
         }
       }
     }
@@ -1500,6 +1529,7 @@ $maxWidth: 1170px;
             @include range-width(450px, 650px) {
               height: 200px;
             };
+
             .tag {
               position: absolute;
               left: 16px;
@@ -1532,6 +1562,7 @@ $maxWidth: 1170px;
                 background-color: rgba(114, 181, 247, 1.00);
               }
             }
+
             .icon-love {
               position: absolute;
               top: 16px;
@@ -1555,7 +1586,8 @@ $maxWidth: 1170px;
               }
             }
           }
-          > b {
+
+          > a {
             height: 44px;
             line-height: 44px;
             display: inline-block;
@@ -1564,7 +1596,16 @@ $maxWidth: 1170px;
             text-align: left;
             font-size: 20px;
             padding: 0 16px;
+            font-weight: 600;
+            cursor: pointer;
             margin-top: 10px;
+            @include transition(all .3s);
+            text-decoration: none;
+            color: rgba(91, 91, 91, 1.00);
+        
+            &:hover, &:active {
+              color: rgba(249, 73, 77, 1.00);
+            }
           }
           > span {
             display: inline-block;
@@ -1611,10 +1652,12 @@ $maxWidth: 1170px;
                 margin-top: 8px;
               }
             }        
-            > a {
+            > button {
+              display: inline-block;
+              font-size: 15px;
               width: 100px;
               height: 36px;
-              line-height: 36px;
+              line-height: 30px;
               text-align: center;
               color: rgba(98, 99, 100, 1.00);
               border: 1px solid rgba(98, 99, 100, 1.00);
@@ -1622,6 +1665,15 @@ $maxWidth: 1170px;
               background-color: white;
               margin-top: 15px;
               cursor: pointer;
+              outline: 0;
+              cursor: pointer;
+              @include transition(all .3s);
+              
+              &:hover, &:active {
+                background-color: rgba(247, 70, 77, 1.00);
+                color: white;
+                border: 0;
+              }
             }
           }
           @include range-width(0, 824px) {
@@ -1733,7 +1785,7 @@ $maxWidth: 1170px;
     display: block;
     width: 196px;
     height: 42px;
-    line-height: 42px;
+    line-height: 40px;
     margin: 0 auto;
     border: 2px solid white;
     margin-top: 48px;
@@ -1742,6 +1794,12 @@ $maxWidth: 1170px;
     font-size: 20px;
     margin-bottom: 48px;
     @include border-radius(42px / 2);
+    @include transition(all .3s);
+    
+    &:hover, &:active {
+      background-color: rgba(255, 255, 255, .5);
+      color: rgba(210, 16, 18, 1.00);
+    }
   }
 }
 
@@ -1887,6 +1945,11 @@ $maxWidth: 1170px;
           padding: 0 4px;
           color: rgba(127, 135, 139, 1.00);
           text-decoration: none;
+          @include transition(all .3s);
+          
+          &:hover, &:active {
+            color: rgba(249, 73, 77, 1.00);
+          }
 
           &:before {
             position: absolute;
@@ -2319,7 +2382,9 @@ $maxWidth: 1170px;
             width: 80px;
             height: 24px;
             line-height: 24px;
+
             a {
+              cursor: pointer;
               color: rgba(83, 84, 85, 1.00);
             }
 
@@ -2373,6 +2438,15 @@ $maxWidth: 1170px;
         margin-top: 4px;
         @include overflow-docx3();
       }
+
+      .pd_type {
+        display: inline-block;
+        width: 100%;
+        font-size: 22px;
+        color: rgba(31, 32, 33, 1.00);
+        margin-top: 4px;
+      }
+
       .price {
         display: inline-block;
         width: 100%;
@@ -2404,6 +2478,17 @@ $maxWidth: 1170px;
         text-align: left;
         font-size: 15px;
 
+        .in_link {
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer;
+          color: rgba(56, 56, 56, 1.00);
+          @include transition(all .3s);
+          
+          &:hover, &:active {
+            color: rgba(249, 73, 77, 1.00);
+          }
+        }
       }
       .c {
         margin-top: 12px;

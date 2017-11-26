@@ -540,3 +540,35 @@ $maxWidth: 1170px;
     }
   }
 }
+
+#content .container .r .info.tt {
+  span {
+    color: rgba(247, 62, 72, 1.00);
+  }
+  border-bottom: 0;
+}
+#content .container .r .c > div {
+  display: inline-block;
+  width: 100%;
+  + * {
+    margin-top: 8px;
+  }
+  @include clearfix();
+  
+  > *{
+    float: left;
+    display: inline-block;
+    width: 90px;
+    
+  }
+  
+  > span {
+    margin-top: 2px;
+  }
+  .select {
+    > select {
+      height: 26px;
+      line-height: 26px;
+    }
+  }
+}

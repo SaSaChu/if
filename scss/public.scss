@@ -2386,6 +2386,22 @@ $maxWidth: 1170px;
             a {
               cursor: pointer;
               color: rgba(83, 84, 85, 1.00);
+              @include transition(color .3s);
+              
+              &:hover, &:active {
+                &.icon-mail {
+                  color: rgba(220, 75, 61, 1.00);
+                }
+                &.icon-google-plus {
+                  color: rgba(66, 133, 244, 1.00);
+                }
+                &.icon-twitter {
+                  color: rgba(22, 171, 236, 1.00);
+                }
+                &.icon-facebook {
+                  color: rgba(72, 98, 163, 1.00);
+                }
+              }
             }
 
             + * {
@@ -2536,6 +2552,9 @@ $maxWidth: 1170px;
           }
           text-align: left;
           padding: 42px 32px;
+          img {
+            max-width: 100%;
+          }
         }
       }
     }

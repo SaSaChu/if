@@ -21,9 +21,12 @@ $(function () {
     if ($(this).scrollTop () > 0) $('#mobile_top').addClass ('t');
     else $('#mobile_top').removeClass ('t');
   });
+  $('#mobile_top .menu>div').click (function () {
+    $(this).toggleClass ('a');
+  });
   $('#totop > a').click (function () {
     if ($(this).index () === 0) {
-      console.error ('x');
+      
       $('html, body').animate ({ scrollTop: 100 }, 'slow');
     } else if ($(this).index () === 1) {
       $('html, body').animate ({ scrollTop: '-=500px' },'slow');
@@ -76,4 +79,15 @@ $(function () {
       $(this).parent ().next ().find ('div').eq ($(this).index ()).addClass ('a').siblings ().removeClass ('a');
     });
   }).first (0).click ();
+
+  $('#car-content.car02 .container .content .l>div.bb .e').each (function () {
+    $(this).click (function () {
+      $(this).toggleClass ('s');
+    });
+  });
+  $('#car-content .container .content .r .box03>.b .t').each (function () {
+    $(this).click (function () {
+      $(this).toggleClass ('s');
+    });
+  });
 });

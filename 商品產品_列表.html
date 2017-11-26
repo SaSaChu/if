@@ -9,7 +9,7 @@
 
     <link href="css/icon.css" rel="stylesheet" type="text/css" />
     <link href="css/public.css" rel="stylesheet" type="text/css" />
-    <link href="css/car.css" rel="stylesheet" type="text/css" />
+    <link href="css/product.css" rel="stylesheet" type="text/css" />
 
     <script src="js/jquery_v1.10.2/jquery-1.10.2.min.js" language="javascript" type="text/javascript" ></script>
     <script src="js/public.js" language="javascript" type="text/javascript" ></script>
@@ -27,6 +27,7 @@
         </a>
       </div>
     </div>
+
     <input type='checkbox' id='cartmp_detail_ckb' class='hckb' />
     
     <div id='header'>
@@ -61,24 +62,11 @@
       <div class='container'>
         <div class='menu'>
           <a href=''>首頁</a>
-          <div>買商品
-            <div>
-              <a href="product_list.html">女裝精品</a>
-              <a href="product_list.html">內衣/男裝</a>
-              <a href="product_list.html">鞋品/箱包</a>
-              <a href="product_list.html">飾品/配件</a>
-              <a href="product_list.html">運動/戶外</a>
-              <a href="product_list.html">傢俱/家電</a>
-              <a href="product_list.html">智能/數碼</a>
-              <a href="product_list.html">影音/小家电</a>
-              <a href="product_list.html">母婴/玩具</a>
-              <a href="product_list.html">汽車/娱樂</a>
-              <a href="product_list.html">美妝/個護</a>
-            </div>
-          </div>
           <div>買禮卷
             <div>
               <a href="">紙本禮卷</a>
+              <a href="">電子禮卷</a>
+              <a href="">電子禮卷</a>
               <a href="">電子禮卷</a>
             </div>
           </div>
@@ -89,7 +77,7 @@
           <a href=''>特店卷與旅遊卷</a>
         </div>
         <div class='icon-user status'>
-          <a href="sing.html">註冊</a> / <a href="login.html">登入</a>
+          <a href="">註冊</a> / <a href="">登入</a>
         </div>
       </div>
     </div>
@@ -98,7 +86,9 @@
       <div class='container icon-home'>
         <a href=''>首頁</a>
         <span class='icon-chevron-right'></span>
-        <a href=''>購物車</a>
+        <a href=''>買禮卷</a>
+        <span class='icon-chevron-right'></span>
+        <a href=''>紙本禮卷</a>
       </div>
     </div>
 
@@ -107,38 +97,25 @@
       <div class='top'>
         <div><label for='mobile_top_ckb' class='icon-menu'></label></div>
         <div>
-          <i class='icon-user'></i><a href="sing.html">註冊</a><span>/</span><a href="login.html">登入</a>
+          <i class='icon-user'></i><a href="">註冊</a><span>/</span><a href="">登入</a>
         </div>
       </div>
       <div class='header'>
         <div class='img'><img src='img/top_logo.png'></div>
         <div>
-          <a href='car_step01.html'>前往結帳</a>
+          <a>前往結帳</a>
           <i class='icon-arrow_drop_down'></i>
           <i class='icon-car' data-cnt='10'></i>
         </div>
       </div>
       <div class='menu'>
         <a href=''>首頁</a>
-        <div class='a'><span>買商品</span>
+        <div class='a'><span>買禮卷</span>
           <div>
-            <a href="product_list.html"  class='a'>女裝精品</a>
-            <a href="product_list.html">內衣/男裝</a>
-            <a href="product_list.html">鞋品/箱包</a>
-            <a href="product_list.html">飾品/配件</a>
-            <a href="product_list.html">運動/戶外</a>
-            <a href="product_list.html">傢俱/家電</a>
-            <a href="product_list.html">智能/數碼</a>
-            <a href="product_list.html">影音/小家电</a>
-            <a href="product_list.html">母婴/玩具</a>
-            <a href="product_list.html">汽車/娱樂</a>
-            <a href="product_list.html">美妝/個護</a>
-          </div>
-        </div>
-        <div><span>買禮卷</span>
-          <div>
-            <a href="product_list.html" class='a'>紙本禮卷</a>
-            <a href="product_list.html">電子禮卷</a>
+            <a href="" class='a'>紙本禮卷</a>
+            <a href="">電子禮卷</a>
+            <a href="">電子禮卷</a>
+            <a href="">電子禮卷</a>
           </div>
         </div>
         <a href=''>晚鳥俱樂部</a>
@@ -148,6 +125,7 @@
         <a href=''>特店卷與旅遊卷</a>
       </div>
     </div>
+
     <div id='mobile_search'>
       <div>
         <input >
@@ -155,109 +133,254 @@
       </div>
     </div>
 
-    <div id='car-content' class='car01'>
+    <div id='product_header'>
       <div class='container'>
-        <div class='tabs'>
-          <a href="" class='a'>我的商品訂單(<i>4</i>)</a>
-          <a href="">我的旅遊訂單(<i>2</i>)</a>
+        <div class='l'>
+          <b>美妝/個人護理</b>
+          <span>快來挑選，if 精選鞋品快來挑選，if 精選鞋品快來挑選，if 精選鞋品。</span>
+          <span>快來挑選，if 精選鞋品快來挑選。</span>
         </div>
+        <div class='r'>
+          <img src='img/title_pic.png'>
+        </div>
+      </div>
+    </div>
+
+    <div id='brands'>
+      <input type='checkbox' id='brands_ckb' class='hckb' />
+
+      <label class='container' for='brands_ckb'>
+        <div class='l'>看看有哪些品牌</div>
+        <div class='r icon-chevron-down'></div>
+      </label>
+
+      <div class='container2'>
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
         
-        <div class='tip'><i class='icon-king'></i> 親愛的 <i>王小明</i> 會員您好，以下是您的購物清單，總共有 <i>4</i> 件商品：</div>        
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+      </div>
+    </div>
 
-        <div class='content'>
-          <div class='l'>
-            <div class='t'>
-              <span>商品名稱</span>
-              <span>價格</span>
-              <span>數量</span>
-              <span>小計</span>
-              <span></span>
-            </div>
+    <div id='product_tags'>
+      <input type='checkbox' id='product_tags_ckb' class='hckb' />
 
-            <div class='i'>
-              <div>
-                <div class='img _ic'><img src='img/d.png'/></div>
-                <div>
-                  <b>台北台北台北台北台北台北台北台北</b>
-                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
-                </div>
-              </div>
-              <div>$90,000</div>
-              <div>
-                <select><option>1</option></select>
-              </div>
-              <div>$90,000</div>
-              <div><a href="" class='icon-x'></a></div>
-            </div>
+      <div class='container'>
+        <label class='l' for='product_tags_ckb'>相關分類</label>
+        <div class='c'>
+          <a href="">清潔工具</a>
+          <a href="">收納工具</a>
+          <a href="">女裝</a>
+          <a href="">戶外運動</a>
+          <a href="">替身</a>
+          <a href="">球迷用品</a>
+          <a href="">流行手勢</a>
+          <a href="">居家用品</a>
+          <a href="">功能包</a>
+          <a href="">五金 / 工具</a>
+          <a href="">居家日用</a>
+        </div>
+        <label class='r icon-chevron-down' for='product_tags_ckb'></label>
+      </div>
 
-            <div class='i'>
-              <div>
-                <div class='img _ic'><img src='img/d.png'/></div>
-                <div>
-                  <b>台北台北台北台北台北台北台北台北</b>
-                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
-                </div>
-              </div>
-              <div>$90,000</div>
-              <div>
-                <select><option>1</option></select>
-              </div>
-              <div>$90,000</div>
-              <div><a href="" class='icon-x'></a></div>
-            </div>
+      <div class='container2'>
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+        <a href=""><img src="img/b02.jpg"></a>
+        <a href=""><img src="img/b03.jpg"></a>
+        <a href=""><img src="img/b01.jpg"></a>
+        <a href=""><img src="img/b04.jpg"></a>
+      </div>
+    </div>
 
-            <div class='i'>
-              <div>
-                <div class='img _ic'><img src='img/d.png'/></div>
-                <div>
-                  <b>台北台北台北台北台北台北台北台北</b>
-                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
-                </div>
-              </div>
-              <div>$90,000</div>
-              <div>
-                <select><option>1</option></select>
-              </div>
-              <div>$90,000</div>
-              <div><a href="" class='icon-x'></a></div>
-            </div>
+    <div id='conditions'>
+      <div class='container'>
+        <div class='l'>
+          共有 30 個產品
+        </div>
+        <div class='r'>
+          <div class='icon-arrow_drop_down select'><select><option>價格塞選</option></select></div>
+          <div class='icon-arrow_drop_down select'><select><option>排序塞選</option></select></div>
+        </div>
+      </div>
+    </div>
 
-            <div class='c'>
-              <b class='icon-im'>重要提醒</b>
-              <div>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-              </div>
-              <div>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-                <span>最多可以保存 30件物品最多可以保存 30件物品最多可以保存30件物品最多可以保存30件物品最多可以保存</span>
-              </div>
-            </div>
-          </div>
-          <div class='r'>
-            <div class='box01'>
-              <b>購物車明細</b>
-              <div>
-                <span>商品件數</span>
-                <span>4件</span>
-              </div>
-              <div>
-                <span>商品件數</span>
-                <span>4件</span>
-              </div>
-              <div>
-                <span>商品件數</span>
-                <span>4件</span>
-              </div>
-              <span>購買金額達 NT500免運</span>
-              <b><span>消費金額總計</span><span>NT 3,070</span></b>
-            </div>
-
-            <a href="">結 帳</a>
-            <a href="">繼續購物</a>
+    <div id='product_list'>
+      <div class='container'>
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
           </div>
         </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+        <div>
+          <div class='_ic'><img src='img/pp02.jpg'></div>
+          <div class='t'><b>$1,234</b><b>/ 原價 $2,345</b></div>
+          <a href='商品產品_詳細.html' class='s'>官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜官方正品：蘭芝夜間修護睡眠面膜</a>
+          <div class='b'>
+            <a class='icon-cart a'>購物車</a>
+            <a class='icon-heart'>加最愛</a>
+            <a class='icon-share2'>分享</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class='pgn'>
+      <div class='container'>
+        <a href="">上一頁</a>
+        <a href="">1</a>
+        <a href="" class='a'>2</a>
+        <a href="">3</a>
+        <a href="">下一頁</a>
       </div>
     </div>
 

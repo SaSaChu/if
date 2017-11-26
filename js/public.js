@@ -82,4 +82,9 @@ $(function () {
       $(this).toggleClass ('s');
     });
   });
+  $('#car-content .container .content .r .box03>.b .t').each (function () {
+    $(this).click (function () {
+      $(this).toggleClass ('s');
+    });
+  });
 });

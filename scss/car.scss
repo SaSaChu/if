@@ -462,6 +462,7 @@ $maxWidth: 1170px;
               width: 100%;
               padding-top: 12px;
               padding-bottom: 12px;
+              cursor: pointer;
               @include clearfix();
               
               > * {
@@ -482,14 +483,20 @@ $maxWidth: 1170px;
                   cursor: pointer;
                 }
               }
-            }
-            > input[type='checkbox'] {
-              &:checked {
+              &.s {
+                .icon-chevron-down {
+                  @include rotate(180deg);
+                }
                 ~.tp {
                   display: inline-block;
                 }
               }
             }
+            // > input[type='checkbox'] {
+            //   &:checked {
+            //    
+            //   }
+            // }
             .tp {
               display: none;
               .tt {

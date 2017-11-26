@@ -198,6 +198,9 @@ $maxWidth: 1170px;
         padding: 0 8px;
         text-decoration: none;
         color: rgba(123, 124, 125, 1.00);
+        &:active, &:hover {
+          color: rgba(251, 31, 0, 1.00);
+        }
       }
     }
     .r {
@@ -483,7 +486,11 @@ $maxWidth: 1170px;
         line-height: 22px;
         height: 22px * 2;
         overflow: hidden;
-
+        text-decoration: none;
+        cursor: pointer;
+        &:active, &:hover {
+          color: rgba(250, 29, 5, 1.00);
+        }
       }
       > .b {
         position: absolute;
@@ -502,11 +509,17 @@ $maxWidth: 1170px;
           float: left;
           display: inline-block;
           width: calc(100% / 3);
+          cursor: pointer;
           &:before {
             margin-right: 3px;
             display: inline-block;
             margin-top: 2px;
-            color: rgba(252, 90, 93, 1.00);
+            
+          }
+          &.a, &:active, &:hover {
+            &:before {
+              color: rgba(252, 90, 93, 1.00);
+            }
           }
 
           + * {

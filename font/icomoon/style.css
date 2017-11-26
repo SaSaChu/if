@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?xyjdh0');
-  src:  url('fonts/icomoon.eot?xyjdh0#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?xyjdh0') format('truetype'),
-    url('fonts/icomoon.woff?xyjdh0') format('woff'),
-    url('fonts/icomoon.svg?xyjdh0#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?7sjdi4');
+  src:  url('fonts/icomoon.eot?7sjdi4#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7sjdi4') format('truetype'),
+    url('fonts/icomoon.woff?7sjdi4') format('woff'),
+    url('fonts/icomoon.svg?7sjdi4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -56,6 +56,15 @@
 }
 .icon-user:before {
   content: "\e909";
+}
+.icon-pencil:before {
+  content: "\e916";
+}
+.icon-heart2:before {
+  content: "\e9da";
+}
+.icon-share2:before {
+  content: "\ea82";
 }
 .icon-google-plus:before {
   content: "\ea8b";

@@ -21,6 +21,9 @@ $(function () {
     if ($(this).scrollTop () > 0) $('#mobile_top').addClass ('t');
     else $('#mobile_top').removeClass ('t');
   });
+  $('#mobile_top .menu>div').click (function () {
+    $(this).toggleClass ('a');
+  });
   $('#totop > a').click (function () {
     if ($(this).index () === 0) {
       

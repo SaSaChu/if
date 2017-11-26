@@ -64,12 +64,15 @@ $maxWidth: 1024px;
     @include clearfix();
     @include range-width(0, 1200px) {
       padding: 0 8px;
-    padding-top: 8px;
-    padding-bottom: 16px;
+      padding-top: 8px;
+      padding-bottom: 16px;
     };
     text-align: left;
     padding-top: 16px;
     padding-bottom: 32px;
+    img {
+      max-width: 100%;
+    }
   }
 }
 #tabs {
@@ -86,6 +89,9 @@ $maxWidth: 1024px;
     max-width: $maxWidth;
     margin: 0 auto;
     @include clearfix();
+    @include range-width(0, 1000px) {
+      width: auto;
+    };
     
     > * {
       float: left;
@@ -208,10 +214,12 @@ $maxWidth: 1024px;
       padding: 16px 0;
       padding-right: 32px;
       padding-bottom: 32px;
+      border-right: 1px solid rgba(240, 241, 242, 1.00);
       @include range-width(0, 850px) {
         padding-right: 0;
+        border-right: 0;
+        border-top: 1px solid rgba(240, 241, 242, 1.00);
       };
-      border-right: 1px solid rgba(240, 241, 242, 1.00);
 
       &.no_b {
         border-right: 0;
@@ -234,6 +242,7 @@ $maxWidth: 1024px;
         display: inline-block;
         width: 100%;
         @include clearfix();
+
 
         + .r {
           margin-top: 20px;
@@ -351,7 +360,7 @@ $maxWidth: 1024px;
           }
         }
         &.l {
-          label {
+          > * {
             display: inline-block;
             max-width: 100%;
             width: 100%;
@@ -387,7 +396,7 @@ $maxWidth: 1024px;
             }
           }
           &.x {
-            label {
+            > * {
               @include clearfix();
               > * {
                 float: left;
@@ -421,7 +430,7 @@ $maxWidth: 1024px;
               }
             }
             &.x2 {
-              label {
+              > * {
                 > * {
                   width: calc(50% - 16px / 2);
                   + * {
@@ -447,6 +456,15 @@ $maxWidth: 1024px;
       @include range-width(0, 850px) {
         padding-left: 0;
         padding-top: 0;
+      }
+      @include range-width(520px, 850px) {
+        @include clearfix();
+        
+        > a {
+          width: 50% !important;
+          float: left;
+          margin-top: 32px !important;
+        }
       }
       b {
         display: inline-block;

@@ -10,11 +10,14 @@ $maxWidth: 1170px;
 
 #car-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: inline-block;
   width: 100%;
   text-align: center;
 
+  @include range-width(0, 1040px) {
+    border-top: 5px solid rgba(211, 38, 47, 1.00);
+  };
   .container {
     display: inline-block;
     width: 100%;
@@ -193,12 +196,12 @@ $maxWidth: 1170px;
         text-align: left;
       }
       .l {
-        width: calc(100% - 280px);
+        width: calc(100% - 310px);
         padding-right: 38px;
         padding-bottom: 32px;
 
         + .r {
-          width: 280px;
+          width: 310px;
         }
         @include range-width(0, 1000px) {
           width: 100%;

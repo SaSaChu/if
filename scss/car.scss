@@ -420,6 +420,14 @@ $maxWidth: 1170px;
               margin-right: 4px;
               margin-top: 2px;
             }
+
+            &:hover, &:active {
+              background-color: rgba(249, 73, 77, 1.00);
+              color: white;
+              &:before {
+                color: white;
+              }
+            }
           }
         }
         .box03 {
@@ -1000,6 +1008,12 @@ $maxWidth: 1170px;
               background-color: rgba(240, 244, 245, 1.00);
               color: rgba(70, 75, 76, 1.00);
               text-decoration: none;
+              @include transition(all .3s);
+              
+              &:hover, &:active {
+                background-color: rgba(249, 73, 77, 1.00);
+                color: white; 
+              }
             }
           }
           &.n2 {
@@ -1097,7 +1111,7 @@ $maxWidth: 1170px;
                 display: inline-block;
               }
               .icon-chevron-down {
-                @include rotate(180deg);
+                @include rotate(180deg);                
               }
             }
             .eee {
@@ -1170,6 +1184,10 @@ $maxWidth: 1170px;
                 }
                 > a {
                   cursor: pointer;
+
+                  &:hover, &:active {
+                    color: rgba(249, 73, 77, 1.00);
+                  }
                 }
                 > input:not([type='radio']) {
                   width: calc(100% - 8px * 2);

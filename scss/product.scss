@@ -10,7 +10,7 @@ $maxWidth: 1170px;
 
 #product_header {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: inline-block;
   width: 100%;
   min-height: 156px;
@@ -91,7 +91,7 @@ $maxWidth: 1170px;
 
 #brands {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: inline-block;
   width: 100%;
 
@@ -141,7 +141,7 @@ $maxWidth: 1170px;
 
 #product_tags {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: inline-block;
   width: 100%;@include range-width(0, 1040px) {
     display: none;
@@ -291,7 +291,7 @@ $maxWidth: 1170px;
 
 #conditions {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: inline-block;
   width: 100%;
   min-height: 60px;
@@ -380,7 +380,7 @@ $maxWidth: 1170px;
 
 #product_list {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   display: inline-block;
   width: 100%;
 

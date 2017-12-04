@@ -377,7 +377,7 @@ $maxWidth: 1170px;
               }
             }
           }
-          > a {
+          > button, > a {
             display: inline-block;
             width: 100%;
             padding: 8px 16px;
@@ -388,7 +388,8 @@ $maxWidth: 1170px;
             margin-top: 16px;
             text-align: center;
             @include transition(color .3s, background-color .3s);
-            
+            @include border-radius(0);
+            cursor: pointer;
             &:hover {
               color: rgba(255, 255, 255, 1.00);
               background-color: rgba(251, 104, 105, 1.00);

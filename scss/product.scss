@@ -588,9 +588,13 @@ $maxWidth: 1170px;
     float: left;
     display: inline-block;
     width: 90px;
-    
   }
-  
+  > input {
+    @include input;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+  }
   > span {
     margin-top: 2px;
   }

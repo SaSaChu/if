@@ -566,7 +566,24 @@ $maxWidth: 1170px;
                   input {
                     width: calc(100% - 3px * 2);
                     margin: 0 3px;
+                    text-align: center;
                   }
+                }
+              }
+              .t_er {
+                display: inline-block;
+                width: 100%;
+                margin: 10px 0;
+                background-color: rgba(251, 243, 224, 1.00);
+                @include border-radius(3px);
+                padding: 8px;
+
+                span {
+                  display: inline-block;
+                  width: 100%;
+                  color: rgba(201, 134, 47, 1.00);
+                  font-size: 13px;
+                  text-align: right;
                 }
               }
               .tttt {
@@ -627,6 +644,7 @@ $maxWidth: 1170px;
               &:last-child {
                 width: 100%;
                 font-size: 13px;
+                margin-top: 5px;
               }
               color: rgba(107, 108, 109, 1.00);
               &:first-child {
@@ -929,6 +947,22 @@ $maxWidth: 1170px;
   .container {
     .content {
       .l {
+
+        .ta_er {
+          display: inline-block;
+          width: 100%;
+          background-color: rgba(251, 243, 224, 1.00);
+          @include border-radius(3px);
+          padding: 20px;
+
+          span {
+            display: inline-block;
+            width: 100%;
+            color: rgba(201, 134, 47, 1.00);
+            font-size: 16px;
+          }
+        }
+
         > h3 {
           display: inline-block;
           width: 100%;
@@ -1297,6 +1331,7 @@ $maxWidth: 1170px;
             margin-top: 40px;
           }
         }
+
         > div {
           display: inline-block;
           width: 100%;
@@ -1495,4 +1530,15 @@ $maxWidth: 1170px;
   100% {
     @include rotate(360deg);
   }
+}
+
+.error {
+  border: 1px solid rgba(230, 114, 99, .8) !important;
+  -webkit-box-shadow: 0 0 105px rgba(230, 114, 99, .8);
+  -moz-box-shadow: 0 0 10px rgba(230, 114, 99, .8);
+  box-shadow: 0 0 10px rgba(230, 114, 99, .8);
+}
+
+.place_no {
+  text-decoration:line-through;
 }

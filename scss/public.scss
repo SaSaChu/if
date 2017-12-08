@@ -2257,7 +2257,9 @@ $maxWidth: 1170px;
   // height: 100px;
   margin-top: 40px;
   text-align: center;
-  
+  @include range-width(0, 450px) {
+    margin-top: 20px;
+  };
 
   .container {
     display: inline-block;
@@ -2295,6 +2297,9 @@ $maxWidth: 1170px;
         }
         @include range-width(0, 990px) {
           height: 500px;
+        }
+        @include range-width(0, 450px) {
+          height: 220px;
         }
       }
       > .imgs {

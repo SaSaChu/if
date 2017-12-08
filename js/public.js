@@ -7,6 +7,7 @@ var imgLiquid=imgLiquid||{VER:"0.9.944"};imgLiquid.bgs_Available=!1,imgLiquid.bg
 
 $(function () {
   $('._ic').imgLiquid ();
+  $('._if').imgLiquid ({fill: false});
 
   $('#tags').each (function () {
     var $that = $(this);

@@ -90,4 +90,16 @@ $(function () {
       $(this).toggleClass ('s');
     });
   });
+  $('#alert.box > div > a').click (function () {
+    $(this).parent ().parent ().removeClass ('s');
+  });
+
+
+
+  function loadingShow () {
+    $('#loading.box').addClass ('s');
+  }
+  function alertShow () {
+    $('#alert.box').addClass ('s');
+  }
 });

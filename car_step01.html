@@ -43,6 +43,7 @@
             <button class='icon-search'>搜尋</button>
           </div>
         </form>
+
         <div class='cartmp'>
 
           <label for='cartmp_detail_ckb' class='icon-arrow_drop_down'>
@@ -88,9 +89,17 @@
           <a href=''>使用說明</a>
           <a href=''>特店卷與旅遊卷</a>
         </div>
-        <div class='icon-user status'>
-          <a href="sing.html">註冊</a> / <a href="login.html">登入</a>
+
+        <div class='user_boxs'>
+          <label for='' class='icon-arrow_user_down'>
+            <span class='icon-user'> </span>
+            <div>
+              <span>王小明，您好</span>
+            </div>
+          </label>
         </div>
+
+
       </div>
     </div>
 
@@ -104,12 +113,25 @@
 
     <div id='mobile_top'>
       <input type='checkbox' id='mobile_top_ckb' class='hckb' />
+
       <div class='top'>
         <div><label for='mobile_top_ckb' class='icon-menu'></label></div>
-        <div>
-          <i class='icon-user'></i><a href="sing.html">註冊</a><span>/</span><a href="login.html">登入</a>
+
+        <div class='m_user_boxs'>
+          <label for='' class='icon-arrow_user_down'>
+            <span class='icon-user'> </span>
+            <div>
+              <span>王小明，您好</span>
+            </div>
+          </label>
         </div>
+
+        <!-- <div>
+          <i class='icon-user'></i><a href="sing.html">註冊</a><span>/</span><a href="login.html">登入</a>
+        </div> -->
+
       </div>
+
       <div class='header'>
         <div class='img'><img src='img/top_logo.png'></div>
         <div>
@@ -118,6 +140,7 @@
           <i class='icon-car' data-cnt='10'></i>
         </div>
       </div>
+
       <div class='menu'>
         <a href=''>首頁</a>
         <div class='a'><span>買商品</span>
@@ -135,6 +158,7 @@
             <a href="product_list.html">美妝/個護</a>
           </div>
         </div>
+
         <div><span>買禮卷</span>
           <div>
             <a href="product_list.html" class='a'>紙本禮卷</a>
@@ -148,6 +172,7 @@
         <a href=''>特店卷與旅遊卷</a>
       </div>
     </div>
+
     <div id='mobile_search'>
       <div>
         <input >
@@ -156,11 +181,15 @@
     </div>
 
     <div id='car-content' class='car01'>
+      <div class='car_name'>
+        <span>我的商品訂單</span>
+      </div>
+
       <div class='container'>
-        <div class='tabs'>
+        <!-- <div class='tabs'>
           <a href="" class='a'>我的商品訂單(<i>4</i>)</a>
           <a href="">我的旅遊訂單(<i>2</i>)</a>
-        </div>
+        </div> -->
         
         <div class='tip'><i class='icon-king'></i> 親愛的 <i>王小明</i> 會員您好，以下是您的購物清單，總共有 <i>4</i> 件商品：</div>        
 
@@ -182,9 +211,29 @@
                   <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
                 </div>
               </div>
+
+              <div>$90,000</div>
+
+              <div>
+                <input type="text" name="lname" value='1'/>
+              </div>
+
+              <div>$90,000</div>
+
+              <div><a href="" class='icon-x'></a></div>
+            </div>
+
+            <div class='i'>
+              <div>
+                <div class='img _ic'><img src='img/d.png'/></div>
+                <div>
+                  <b>台北台北台北台北台北台北台北台北</b>
+                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
+                </div>
+              </div>
               <div>$90,000</div>
               <div>
-                <select><option>1</option></select>
+                <input type="text" name="lname" value='1' />
               </div>
               <div>$90,000</div>
               <div><a href="" class='icon-x'></a></div>
@@ -200,23 +249,7 @@
               </div>
               <div>$90,000</div>
               <div>
-                <select><option>1</option></select>
-              </div>
-              <div>$90,000</div>
-              <div><a href="" class='icon-x'></a></div>
-            </div>
-
-            <div class='i'>
-              <div>
-                <div class='img _ic'><img src='img/d.png'/></div>
-                <div>
-                  <b>台北台北台北台北台北台北台北台北</b>
-                  <span>台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123台北 123</span>
-                </div>
-              </div>
-              <div>$90,000</div>
-              <div>
-                <select><option>1</option></select>
+                <input type="text" name="lname" value='1' />
               </div>
               <div>$90,000</div>
               <div><a href="" class='icon-x'></a></div>
@@ -495,24 +528,6 @@
       <a class='icon-chevron-down'></a>
     </div>
 
-
-
-    <div id='loading' class='box'>
-      <div>
-        <b>商品內容確認，訂單建立中</b>
-        <span>請稍候</span>
-        <div></div>
-      </div>
-    </div>
-
-    <div id='alert' class='box'>
-      <div>
-        <b class='icon-im'>錯誤！</b>
-        <span>此商品已盤售，請重新選擇商品，或商品數量</span>
-        <span>若有任何問題，請洽客服。</span>
-        <a>確定</a>
-      </div>
-    </div>
 
   </body>
 </html>

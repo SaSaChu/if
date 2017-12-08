@@ -88,9 +88,16 @@
           <a href=''>使用說明</a>
           <a href=''>特店卷與旅遊卷</a>
         </div>
-        <div class='icon-user status'>
-          <a href="sing.html">註冊</a> / <a href="login.html">登入</a>
+
+        <div class='user_boxs'>
+          <label for='' class='icon-arrow_user_down'>
+            <span class='icon-user'> </span>
+            <div>
+              <span>王小明，您好</span>
+            </div>
+          </label>
         </div>
+
       </div>
     </div>
 
@@ -106,9 +113,18 @@
       <input type='checkbox' id='mobile_top_ckb' class='hckb' />
       <div class='top'>
         <div><label for='mobile_top_ckb' class='icon-menu'></label></div>
-        <div>
-          <i class='icon-user'></i><a href="sing.html">註冊</a><span>/</span><a href="login.html">登入</a>
+        
+        <div class='m_user_boxs'>
+          <label for='' class='icon-arrow_user_down'>
+            <span class='icon-user'> </span>
+            <div>
+              <span>王小明，您好</span>
+            </div>
+          </label>
         </div>
+        <!-- <div class='nomo'>
+          <i class='icon-user'></i><a href="sing.html">註冊</a><span>/</span><a href="login.html">登入</a>
+        </div> -->
       </div>
       <div class='header'>
         <div class='img'><img src='img/top_logo.png'></div>
@@ -156,11 +172,15 @@
     </div>
 
     <div id='car-content' class='car02'>
+      <div class='car_name'>
+        <span>我的商品訂單</span>
+      </div>
+      
       <div class='container'>
-        <div class='tabs'>
+       <!--  <div class='tabs'>
           <a href="" class='a'>我的商品訂單(<i>4</i>)</a>
           <a href="">我的旅遊訂單(<i>2</i>)</a>
-        </div>
+        </div> -->
         
         <div class='tip'><i class='icon-edit'></i> 請確認您的購物明細，並填入付款方式及寄送方式</div>        
 
@@ -426,6 +446,24 @@
       <a>top</a>
       <a class='icon-chevron-up'></a>
       <a class='icon-chevron-down'></a>
+    </div>
+
+
+    <div id='loading' class='box'>
+      <div>
+        <b>商品內容確認，訂單建立中</b>
+        <span>請稍候</span>
+        <div></div>
+      </div>
+    </div>
+
+    <div id='alert' class='box'>
+      <div>
+        <b class='icon-im'>錯誤！</b>
+        <span>此商品已盤售，請重新選擇商品，或商品數量</span>
+        <span>若有任何問題，請洽客服。</span>
+        <a>確定</a>
+      </div>
     </div>
 
   </body>

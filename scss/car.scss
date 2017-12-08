@@ -18,6 +18,27 @@ $maxWidth: 1170px;
   @include range-width(0, 1040px) {
     border-top: 5px solid rgba(211, 38, 47, 1.00);
   };
+
+  .car_name {
+    display: inline-block;
+    width: 100%;
+
+    span {
+      display: inline-block;
+      max-width: $maxWidth;
+      width: 100%;
+      font-size: 24px;
+      color:rgba(207, 37, 41, 1.00);
+      padding: 25px 0;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(233, 234, 235, 1.00); 
+
+      @include range-width(0, 1200px) {
+        padding: 20px 8px;
+      };
+    }
+  }
   .container {
     display: inline-block;
     width: 100%;
@@ -60,11 +81,12 @@ $maxWidth: 1170px;
         // }
       }
     }
+
     .tip {
       display: inline-block;
       width: 100%;
       padding: 44px 0;
-      line-height: 22px;
+      line-height: 30px;
       font-size: 20px;
       color: rgba(0, 0, 3, 1.00);
       text-align: left;
@@ -743,8 +765,10 @@ $maxWidth: 1170px;
             &:nth-child(2), &:nth-child(3), &:nth-child(4) {
               line-height: 80px;
               font-weight: bold;
-              > select {
+              > input {
                 margin-top: 26px;
+                width: 50px;
+                text-align: center;
               }
             }
             &:nth-child(5) {

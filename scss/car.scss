@@ -707,22 +707,17 @@ $maxWidth: 1170px;
 
         .ta_er {
           display: inline-block;
-          width: 45%;
+          width: 100%;
           background-color: rgba(251, 243, 224, 1.00);
           @include border-radius(3px);
-          padding: 10px;
-          margin-top: 10px;
-          float: right;
-
-          @include range-width(0, 645px) {
-            width: 100%;
-          }
+          padding: 20px;
+          margin-bottom: 40px;
 
           span {
             display: inline-block;
             width: 100%;
             color: rgba(201, 134, 47, 1.00);
-            font-size: 13px;
+            font-size: 16px;
           }
         }
 

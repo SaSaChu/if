@@ -92,7 +92,7 @@ $maxWidth: 1024px;
     @include range-width(0, 1000px) {
       width: auto;
     };
-    
+
     > * {
       float: left;
       position: relative;
@@ -176,6 +176,30 @@ $maxWidth: 1024px;
 #main {
   display: inline-block;
   width: 100%;
+
+  .m_ta_er {
+    display: inline-block;
+    width: 100%;
+    max-width: $maxWidth;
+    background-color: rgba(251, 243, 224, 1.00);
+    @include border-radius(3px);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+
+    @include range-width(0, 1055px) {
+      width: calc(100% - 20px);
+      margin: 0 10px 20px 10px;
+    }
+
+    span {
+      display: inline-block;
+      width: 100%;
+      color: rgba(201, 134, 47, 1.00);
+      font-size: 16px;
+      text-align: left;
+    }
+  }
+
   .container {
     display: inline-block;
     width: 100%;
@@ -683,4 +707,12 @@ $maxWidth: 1024px;
       }
     }
   }
+}
+
+
+.m_error {
+  border: 1px solid rgba(230, 114, 99, .8) !important;
+  -webkit-box-shadow: 0 0 105px rgba(230, 114, 99, .8);
+  -moz-box-shadow: 0 0 10px rgba(230, 114, 99, .8);
+  box-shadow: 0 0 10px rgba(230, 114, 99, .8);
 }

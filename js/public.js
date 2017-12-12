@@ -38,6 +38,16 @@ $(function () {
   $('#carfix > a').click (function () {
     $(this).toggleClass ('s').siblings ().removeClass ('s');
   });
+  $('body').click (function (e) {
+    var target = e.target;
+
+    if (!$(target).is('#detail_detail') && !$(target).parents ().is('#detail_detail') && !$(target).is('label[for="cartmp_detail_ckb"]') && !$(target).parents ().is('label[for="cartmp_detail_ckb"]') && !$(target).is('#cartmp_detail_ckb')) {
+      $('#cartmp_detail_ckb').prop ('checked', false);
+    }
+    if (!$(target).is('#carfix') && !$(target).parents ().is('#carfix')) {
+      $('#carfix > a').removeClass ('s');
+    }
+  });
 
 
   $('#maylike').each (function () {

@@ -409,6 +409,7 @@ $maxWidth: 1170px;
             text-decoration: none;
             margin-top: 16px;
             text-align: center;
+            font-size: 16px;
             @include transition(color .3s, background-color .3s);
             @include border-radius(0);
             cursor: pointer;
@@ -1353,29 +1354,100 @@ $maxWidth: 1170px;
                 margin-top: 8px;
                 border-top: 1px dashed rgba(222, 222, 222, 1.00);
                 padding-top: 8px;
+
+                > span {
+                  &:first-child {
+                    > * {
+                      // margin-top: 12px;
+                      // margin-right: 4px;
+                    }
+                  }
+                  &:last-child {
+                    > a {
+                      margin-top: (40px - 26px) / 2 + 6px;
+                    }
+                  }
+                }
               }
 
+              > a {
+                position: absolute;
+                bottom: 4px;
+                right: 0;
+                display: inline-block;
+                width: 26px * 2 + 4px;
+                height: 34px;
+                line-height: 34px;
+                color: white;
+                background-color: rgba(200, 200, 200, 1.00);
+                text-align: center;
+                cursor: pointer;
+
+                @include border-radius(2px);
+
+                @include transition(background-color .3s);
+
+                &:hover, &:active {
+                  background-color: rgba(255, 103, 102, 1.00);
+                }
+              }
               > span {
                 float: left;
                 display: inline-block;
                 // border: 1px solid rgba(255, 0, 0, .3);
-                height: 40px;
+                min-height: 40px;
                 line-height: 40px;
 
                 &:first-child {
                   width: 40px;
                   text-align: center;
                   > * {
-                    margin-top: 8px;
+                    margin-top: 12px;
+                  }
+
+                  @include range-width(0, 450px) {
+                    width: 30px;
                   }
                 }
                 &:not(:first-child):not(:last-child) {
                   &.n3 {
-                    width: calc((100% - #{40px + 26px * 2 + 4px}) / 3);
+                    @include range-width(0, 650px) {
+                      width: calc(100% - #{40px + 26px * 2 + 4px});
+                      margin-left: 40px;
+                      &:nth-child(2) {
+                        margin-left: 0;
+                      }
+
+                      &:before {
+                        width: 70px;
+                      }
+                      > input {
+                        width: calc(100% - 70px - 4px);
+                      }
+                    }
+                    @include range-width(0, 450px) {
+                      margin-left: 30px;
+                    }
+                    @include range-width(650px) {
+                      width: calc((100% - #{40px + 26px * 2 + 4px}) / 3);
+                      +.n3 {
+                        &:before {
+                          width: 90px;
+                          text-align: right;
+                        }
+                        > input {
+                          width: calc(100% - 90px - 4px);
+                        }
+                      }
+                    };
                   }
                   &:not(.n3) {
                     width: calc(100% - #{40px + 26px * 2 + 4px});
                     margin-left: 40px;
+
+                    @include range-width(0, 450px) {
+                      margin-left: 30px;
+                    }
                   }
                   color: rgba(145, 145, 145, 1.00);
                   &:before {
@@ -1392,6 +1464,18 @@ $maxWidth: 1170px;
                     margin: 0;
                     margin-top: 2px;
                     padding: 0 4px;
+                  }
+                  @include range-width(0, 450px) {
+
+                  }
+                  @include range-width(0, 650px) {
+                    &:before {
+                      width: 70px;
+                      font-size: 13px;
+                    }
+                    > input {
+                      width: calc(100% - 70px - 4px);
+                    }
                   }
                 }
                 &:last-child {
